@@ -1,0 +1,27 @@
+{% extends "bootstrap/base.html" %}
+
+{% block title %}
+{{ title }}
+{% endblock %}
+
+{% block head %}
+{{ super() }}
+<div class="container">
+    <div class="title">
+        <h1>Colour Palette Generator</h1>
+    </div>
+</div>
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+{% endblock %}
+
+{% block navbar %}
+<div class="container">
+    <div class="navbar">
+        <a href="{{ url_for('home') }}" class="btn btn-primary" role="button">Home</a>
+        <a href="{{ url_for('about') }}" class="btn btn-primary" role="button">About</a>
+    </div>
+</div>
+{% endblock %}
+
+{% block content %}
+{% endblock %}
